@@ -1,0 +1,44 @@
+% PREDICTING A PULSAR STAR
+% by Dr Robert Lyon
+% Data from Kaggle
+% https://www.kaggle.com/pavanraj159/predicting-a-pulsar-star/
+%
+% The data takes measurements of a star and whether or not it is a pulsar star so that they can use machine learning in the future to predict if a star is a pulsar star or not using just measurements.
+%
+% As per the assignment, I have extracted only 3 columns from the dataset to use in Weka
+% As per the assignment, I have manually choosen 20 random rows from the dataset to use in Weka
+% As I choose the data manually, some thought was placed into having a fair balance between pulsar and non pulsar stars, so the data presented in this file is not fully random in nature.
+%
+% Attribute descriptions
+% 'STD Integrated Profile' - Standard Deviation of the Integrated Profile measurement of the star
+% 'STD DM-SNR Curve' - Standard Deviation of the DM-SNR Curve measurement of the star
+% Pulsar - Whether the star is pulsar (1) or not (0)
+%
+
+@relation PulsarStar
+
+@attribute 'STD Integrated Profile' REAL
+@attribute 'STD DM-SNR Curve' REAL
+@attribute Pulsar {0,1}
+
+@data
+55.68378214,19.11042633,0
+41.57220208,61.71901588,1
+37.33065932,12.01691346,0
+45.9319193,14.71602871,0
+48.91716569,18.3133067,0
+47.34586165,18.94498977,0
+45.54990543,13.07903424,1
+28.66604164,62.07021971,1
+51.93727202,52.77264803,0
+48.81156969,17.37868175,0
+29.94865398,82.39462399,1
+35.77982308,29.76039993,1
+46.45474042,77.75535652,0
+53.34878418,10.57083301,0
+45.47508547,65.09419657,1
+45.72573893,39.11645317,0
+39.5898212,16.62645319,0
+30.2377138,62.57739528,1
+44.57874592,25.57445006,0
+29.29766978,66.32182537,1
